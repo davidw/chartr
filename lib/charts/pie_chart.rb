@@ -74,11 +74,8 @@ class PieChart < Chart
   end
   
   def output(canvasname = (@title || "chart"))
-    canvasname = JSON.encode(canvasname)
-    options = JSON.encode(self.options)
-    dataset = JSON.encode(@dataset)
-    o = "var chart = new Plotr.PieChart(#{canvasname}, #{options});
-        chart.addDataset(#{dataset});
+    o = "var chart = new Plotr.PieChart(#{canvasname.to_json}, #{self.options.to_json});
+        chart.addDataset(#{@dataset.to_json});
         chart.render();"
   end
 end
