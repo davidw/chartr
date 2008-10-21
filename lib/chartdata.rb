@@ -1,4 +1,4 @@
-class Chartdata
+class Chartr::Chartdata
   attr_accessor :title, :xticks, :data, :label
   
   def initialize(data, title = nil)

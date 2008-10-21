@@ -1,4 +1,4 @@
-class BarChart < Chart
+class Chartr::BarChart < Chartr::Chart
   def initialize(params = {})
     super
     params = params.reverse_merge!({ :axisLabelColor        => "#000000",

@@ -1,7 +1,4 @@
-require "chartdata"
-include ActiveSupport
-
-class Chart  
+class Chartr::Chart
   attr_accessor :options, :dataset
   def initialize(params = {})
     # params = params.reverse_merge!({ :colorScheme => "blue", 

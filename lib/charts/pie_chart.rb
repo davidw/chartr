@@ -1,4 +1,4 @@
-class PieChart < Chart
+class Chartr::PieChart < Chartr::Chart
   def initialize(params = {})
     super
     params = params.reverse_merge!({ :axisLabelColor      => "#000000",
