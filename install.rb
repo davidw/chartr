@@ -10,7 +10,7 @@ Dir.chdir(Dir.getwd.sub(/vendor.*/, '')) do
   chartr_path = RAILS_ROOT + "/vendor/plugins/chartr"
   destination = RAILS_ROOT + "/public/javascripts/chartr"
 
-  flotr = "flotr-lib/release/prototype/flotr-0.2.0-test/flotr"
+  flotr = "flotr/release/prototype/flotr-0.2.0-test/flotr"
 
   # Files to be copied
   files = ["#{chartr_path}/#{flotr}/flotr-min.js",
