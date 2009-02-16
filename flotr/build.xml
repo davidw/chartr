@@ -8,7 +8,7 @@
 	<property name="release_dir" value="release"/>
 	<property name="flotr_dir" value="flotr/${framework}"/>
 	<property name="build_dir" value="${release_dir}/${framework}/flotr-${version}"/>
-	<property name="jar_dir" location="${basedir}/yuicompressor-2.3.5/build" />
+	<property name="yuicompressor" location="yuicompressor-2.4.2.jar" />
 	<property name="header" value="Flotr ${version} Copyright (c) 2009 Bas Wenneker, &lt;http://solutoire.com&gt;, MIT License." />
 	<property name="replace_dir" value="../../flotr/${framework}/"/>
 	<property name="online_dir" value="${release_dir}/${framework}/online-${version}"/>
@@ -74,7 +74,7 @@
 		<apply executable="java" parallel="false">
 	        <fileset file="${build_dir}/flotr/flotr.js"/>
 	        <arg line="-jar"/>
-	        <arg path="${jar_dir}/yuicompressor-2.3.5.jar"/>
+	        <arg path="${yuicompressor}"/>
 	        <srcfile/>
 	        <arg line="-o"/>
 	        <mapper type="glob" from="*.js" to="${build_dir}/flotr/*-min.js"/>
