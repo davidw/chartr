@@ -25,6 +25,7 @@ end
 class Chartr::Chart
   attr_accessor :data
 
+
   def initialize(params = {})
     @options ||= {}
     @options = @options.deep_merge(params)
