@@ -1,5 +1,7 @@
 = Chartr -- A Ruby interface to the Flotr Javascript chart library
 
+Flotr: http://solutoire.com/category/flotr/
+
 == Simple example (from outside of Rails)
 
   <% @c = Chartr::BarChart.new(:bars => {:barWidth => 0.5}, :yaxis => {:min => 0}) %>

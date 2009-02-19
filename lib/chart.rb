@@ -25,7 +25,8 @@ end
 class Chartr::Chart
   attr_accessor :data
 
-
+  # Initialize the chart with the options listed here:
+  # http://solutoire.com/flotr/docs/options/
   def initialize(params = {})
     @options ||= {}
     @options = @options.deep_merge(params)
