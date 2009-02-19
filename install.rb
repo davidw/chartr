@@ -15,6 +15,8 @@ Dir.chdir(Dir.getwd.sub(/vendor.*/, '')) do
   # Files to be copied
   files = ["#{chartr_path}/#{flotr}/flotr-min.js",
            "#{chartr_path}/#{flotr}/lib/canvastext.js",
+           "#{chartr_path}/#{flotr}/lib/excanvas.js",
+           "#{chartr_path}/#{flotr}/lib/base64.js",
            "#{chartr_path}/#{flotr}/lib/canvas2image.js"]
 
   # Create destination directory (RAILS_ROOT/public/javascripts/chartr)
