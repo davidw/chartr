@@ -1,0 +1,16 @@
+namespace :chartr do
+  desc "Compress JS files into chartr.js"
+  task :compress_js do
+    FileUtils.cd('public/javascripts') do
+      output = ""
+      ['prototype.js', 'excanvas.js', 'plotr_uncompressed.js'].each do |f|
+        output << File.read(f)
+      end
+      File.open('/tmp/chartr.js', 'w') do |f|
+        f.write(output)
+    end
+    end
+
+    `java -jar ./flotr/yuicompressor-2.4.2.jar  /tmp/chartr.js > public/javascripts/chartr.js`
+  end
+end
