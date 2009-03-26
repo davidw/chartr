@@ -111,6 +111,7 @@ var CanvasText = {
 		'ê': { diacritic: '^', letter: 'e' },
 		'ë': { diacritic: '¨', letter: 'e' },
 		'à': { diacritic: '`', letter: 'a' },
+		'â': { diacritic: '^', letter: 'a' },
 		'ç': { diacritic: '¸', letter: 'c' },
 		'ñ': { diacritic: '~', letter: 'n' },
 		'ô': { diacritic: '^', letter: 'o' },

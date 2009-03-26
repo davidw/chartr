@@ -1,5 +1,5 @@
 //Flotr 0.2.0-test Copyright (c) 2009 Bas Wenneker, <http://solutoire.com>, MIT License.
-/* $Id: flotr.js 95 2009-02-12 20:20:05Z fabien.menager $ */
+/* $Id: flotr.js 102 2009-03-25 14:00:13Z fabien.menager $ */
 
 /** 
  * @projectDescription Flotr is a javascript plotting library based on the Prototype Javascript Framework.
@@ -335,7 +335,8 @@ Flotr.Graph = Class.create({
 				fillColor: null,       // => fill color
 				fillOpacity: 0.4,      // => opacity of the fill color, set to 1 for a solid fill, 0 hides the fill
 				horizontal: false,
-				stacked: false
+				stacked: false,
+				centered: true         // => center the bars to their x axis value
 			},
 			candles: {
 				show: false,           // => setting to true will show candle sticks, false will hide
@@ -403,7 +404,7 @@ Flotr.Graph = Class.create({
 				toolbarDownload: 'Download CSV', // @todo: add language support
 				toolbarSelectAll: 'Select all'
 			}
-		}
+		};
 		
 		options.x2axis = Object.extend(Object.clone(options.xaxis), options.x2axis);
 		options.y2axis = Object.extend(Object.clone(options.yaxis), options.y2axis);
@@ -594,7 +595,7 @@ Flotr.Graph = Class.create({
 				else {
 					var newRow = [];
 					newRow[0] = x;
-					newRow[i+1] = y
+					newRow[i+1] = y;
 					dg.push(newRow);
 				}
 			});
@@ -639,7 +640,7 @@ Flotr.Graph = Class.create({
 		this.tabs = {
 			graph: new Element('div', {className:'flotr-tab selected', style:'float:left;'}).update(this.options.spreadsheet.tabGraphLabel),
 			data: new Element('div', {className:'flotr-tab', style:'float:left;'}).update(this.options.spreadsheet.tabDataLabel)
-		}
+		};
 		
 		tabsContainer.insert(this.tabs.graph).insert(this.tabs.data);
 		
@@ -913,8 +914,8 @@ Flotr.Graph = Class.create({
 				b = s.bars;
 				c = s.candles;
 				if(s.xaxis == axis) {
-					// For candle sticks
-					if (c.show) {
+					// For candle sticks and centered bars
+					if (c.show || (b.centered && b.show)) {
 						// We don't use c.candleWidth in order not to stick the borders
 						newmax = Math.max(axis.datamax + 0.5, newmax);
 						newmin = Math.min(axis.datamin - 0.5, newmin);
@@ -923,7 +924,7 @@ Flotr.Graph = Class.create({
 					if (b.show) {
 						// For normal vertical bars
 						if (!b.horizontal && (b.barWidth + axis.datamax > newmax))
-							newmax = axis.max + b.barWidth;
+							newmax = axis.max + (b.centered ? b.barWidth/2 : b.barWidth);
 
 						// For horizontal stacked bars
 						if(b.stacked && b.horizontal){
@@ -1252,7 +1253,7 @@ Flotr.Graph = Class.create({
 				style.valign = 't';
 				
 				ctx.drawText(
-					tick.label,
+					tick.label + "foobar",
 					this.plotOffset.left + this.tHoz(tick.v, axis), 
 					this.plotOffset.top + this.plotHeight + options.grid.labelMargin,
 					style
@@ -1929,7 +1930,7 @@ Flotr.Graph = Class.create({
 			if(series.bars.horizontal)
 				var left = stackOffset, right = x + stackOffset, bottom = y, top = y + barWidth;
 			else 
-				var left = x, right = x + barWidth, bottom = stackOffset, top = y + stackOffset;
+				var left = x - (series.bars.centered ? barWidth/2 : 0), right = x + barWidth - (series.bars.centered ? barWidth/2 : 0), bottom = stackOffset, top = y + stackOffset;
 
 			if(right < xa.min || left > xa.max || top < ya.min || bottom > ya.max)
 				continue;
@@ -2013,7 +2014,7 @@ Flotr.Graph = Class.create({
 			if(series.bars.horizontal) 
 				var left = stackOffset, right = x + stackOffset, bottom = y, top = y + barWidth;
 			else 
-				var left = x, right = x + barWidth, bottom = stackOffset, top = y + stackOffset;
+        var left = x - (series.bars.centered ? barWidth/2 : 0), right = x + barWidth - (series.bars.centered ? barWidth/2 : 0), bottom = stackOffset, top = y + stackOffset;
 			
 			if(right < xa.min || left > xa.max || top < ya.min || bottom > ya.max)
 				continue;
@@ -2229,6 +2230,8 @@ Flotr.Graph = Class.create({
 		
 		if(sw > 0){
 			slices.each(function (slice) {
+				if (slice.startAngle == slice.endAngle) return;
+				
 				var bisection = (slice.startAngle + slice.endAngle) / 2,
 				    xOffset = center.x + Math.cos(bisection) * slice.options.explode + sw,
 				    yOffset = center.y + Math.sin(bisection) * slice.options.explode + sw;
@@ -2246,6 +2249,8 @@ Flotr.Graph = Class.create({
 			html = ['<div style="color:' + this.options.grid.color + '" class="flotr-labels">'];
 		
 		slices.each(function (slice, index) {
+			if (slice.startAngle == slice.endAngle) return;
+			
 			var bisection = (slice.startAngle + slice.endAngle) / 2,
 			    color = slice.series.color,
 			    fillColor = slice.options.fillColor || color,
@@ -2489,7 +2494,7 @@ Flotr.Graph = Class.create({
 		var offset = this.overlay.cumulativeOffset(),
 			rx = (event.pageX - offset.left - this.plotOffset.left),
 			ry = (event.pageY - offset.top - this.plotOffset.top),
-			ax = 0, ay = 0
+			ax = 0, ay = 0;
 			
 		if(event.pageX == null && event.clientX != null){
 			var de = document.documentElement, b = document.body;

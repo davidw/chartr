@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 48
-/svn/!svn/ver/93/trunk/flotr/flotr/prototype/lib
+V 49
+/svn/!svn/ver/101/trunk/flotr/flotr/prototype/lib
 END
 base64.js
 K 25
@@ -18,14 +18,14 @@ END
 excanvas.js
 K 25
 svn:wc:ra_dav:version-url
-V 60
-/svn/!svn/ver/77/trunk/flotr/flotr/prototype/lib/excanvas.js
+V 61
+/svn/!svn/ver/101/trunk/flotr/flotr/prototype/lib/excanvas.js
 END
 canvastext.js
 K 25
 svn:wc:ra_dav:version-url
-V 62
-/svn/!svn/ver/93/trunk/flotr/flotr/prototype/lib/canvastext.js
+V 63
+/svn/!svn/ver/100/trunk/flotr/flotr/prototype/lib/canvastext.js
 END
 canvas2image.js
 K 25

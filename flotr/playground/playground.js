@@ -379,7 +379,11 @@ var specs = {
 		stacked: {
 			type: Boolean,
 			def: false
-		}
+		},
+		centered: {
+      type: Boolean,
+      def: false
+    }
 	},
 	candles: {
 		_options: {

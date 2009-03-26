@@ -24,13 +24,20 @@ class Chartr::BarChart < Chartr::Chart
       @options[:bars][:horizontal] = false
     end
 
+    if @options[:bars] && @options[:bars][:barWidth]
+      xlen = @options[:bars][:barWidth]/2
+    else
+      xlen = 0.5
+    end
+
     newdata.each do |a|
+
       if axis == :xaxis
         @data << [i,a[1]]
-        ticks << [i + 0.5, a[0]]
+        ticks << [i + xlen, a[0]]
       else
         @data << [a[0],i]
-        ticks << [i + 0.5, a[1]]
+        ticks << [i + xlen, a[1]]
       end
       i += 1
     end
