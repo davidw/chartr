@@ -1253,7 +1253,7 @@ Flotr.Graph = Class.create({
 				style.valign = 't';
 				
 				ctx.drawText(
-					tick.label + "foobar",
+					tick.label,
 					this.plotOffset.left + this.tHoz(tick.v, axis), 
 					this.plotOffset.top + this.plotHeight + options.grid.labelMargin,
 					style

@@ -1,49 +1,76 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <title>Flotr: Playground</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-
-  <script type="text/javascript" src="../flotr/prototype/lib/prototype-1.6.0.2.js"></script>
-  <!--[if IE]>
-    <script type="text/javascript" src="../flotr/prototype/lib/excanvas.js"></script>
-    <script type="text/javascript" src="../flotr/prototype/lib/base64.js"></script>
-  <![endif]-->
-  <script type="text/javascript" src="../flotr/prototype/lib/canvas2image.js"></script>
-  <script type="text/javascript" src="../flotr/prototype/lib/canvastext.js"></script>
-  <script type="text/javascript" src="../flotr/prototype/flotr.js"></script>
-  <script type="text/javascript" src="livepipe.js"></script>
-  <script type="text/javascript" src="tabs.js"></script>
-  <script type="text/javascript" src="playground.js"></script>
-</head>
-<body>
-<table>
-  <tr>
-    <td style="width: 430px;">
-    <p>Here you can configure a chart by changing the values in the form on the left side of the page. </p>
-    <p>After every change, the code to plot the chart is updated. <br />
-    The checkboxes on the left indicate if you use the custom value (checked) or the default value (unchecked) of the options.<br />
-    To change the options of a collapsed group, you must click on its title.</p>
-	<p>Please, report any bug <a href="http://code.google.com/p/flotr/issues/list" target="_blank">here</a>.</p>
-	<p>I recommend using Firefox, Opera, Chrome or Safari instead of Internet Explorer as it is really slow and all the featuresd will probably not work.</p>
-    <ul id="tabs" class="subsection_tabs">
-      <li class="tab"><a href="#global">Global</a></li>
-    </ul>
-    </td>
-    <td id="output" rowspan="2">
-      <div id="fixed">
-      	<div id="container" style="width: 500px; height: 300px;"></div>
-	    <button type="button" onclick="draw()">Draw !</button>
-	    <pre><code class="javascript"></code></pre>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td id="configurator">
-    <form name="global" id="global"></form>
-    </td>
-  </tr>
-</table>
-</body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Flotr: Playground</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="../flotr/prototype/lib/prototype.js"></script>
+    <!--[if IE]>
+      <script type="text/javascript" src="../flotr/prototype/lib/excanvas.js"></script>
+      <script type="text/javascript" src="../flotr/prototype/lib/base64.js"></script>
+    <![endif]--><script type="text/javascript" src="../flotr/prototype/lib/canvas2image.js"></script>
+    <script type="text/javascript" src="../flotr/prototype/lib/canvastext.js"></script>
+    <script type="text/javascript" src="../flotr/prototype/flotr.js"></script>
+    <script type="text/javascript" src="lib/livepipe.js"></script>
+    <script type="text/javascript" src="lib/tabs.js"></script>
+    <script type="text/javascript" src="lib/colorpicker.js"></script>
+    <script type="text/javascript" src="specs.js"></script>
+    <script type="text/javascript" src="playground.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+				  <h3>
+					  <a href="javascript:;" onclick="$(this).up().next().toggle()">Informations &gt;</a>
+					</h3>
+					<div style="display: none;">
+	          <p>Here you can configure a chart by changing the values in the form on the left side of the page. </p>
+	          <p>
+	            After every change, the code to plot the chart is updated. 
+	            <br/>
+	            The checkboxes on the left indicate if you use the custom value (checked) or the default value (unchecked) of the options.
+	            <br/>
+	            To change the options of a collapsed group, you must click on its title.
+	          </p>
+	          <p>
+	            Please, report any bug <a href="http://code.google.com/p/flotr/issues/list" target="_blank">here</a>.
+	          </p>
+	          <p>This playground is from the code present in the SVN trunk, so any bug found here doesn't concern the downloadable Zip.</p>
+	          <p>I recommend using Firefox, Opera, Chrome or Safari instead of Internet Explorer as it is really slow and all the features probably won't work.</p>
+          </div>
+          <button type="button" onclick="draw()" style="float: right;">Draw &gt;</button>
+          <ul id="tabs" class="subsection_tabs">
+            <li class="tab">
+              <a href="#global">Global</a>
+            </li>
+          </ul>
+        </td>
+        
+        <td id="output" rowspan="2">
+          <div id="fixed">
+            <div id="container" style="width: 500px; height: 300px;"></div>
+            
+            <ul id="tabs-io" class="subsection_tabs">
+              <li class="tab"><a href="#output-code">Output</a></li>
+              <li class="tab"><a href="#input-code" style="white-space: nowrap; width: auto;">Input (not yet functional)</a></li>
+            </ul>
+            
+            <pre id="output-code"></pre>
+            <div id="input-code">
+              <textarea></textarea>
+              <button type="button" onclick="input()">&lt; Get</button>
+            </div>
+            
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td id="configurator">
+          <form name="global" id="global"></form>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>

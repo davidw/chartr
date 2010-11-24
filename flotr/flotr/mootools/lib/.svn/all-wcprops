@@ -1,17 +1,35 @@
 K 25
 svn:wc:ra_dav:version-url
-V 46
-/svn/!svn/ver/8/trunk/flotr/flotr/mootools/lib
+V 48
+/svn/!svn/ver/150/trunk/flotr/flotr/mootools/lib
 END
-mootools-release-1.11.js
+base64.js
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/svn/!svn/ver/8/trunk/flotr/flotr/mootools/lib/mootools-release-1.11.js
+V 58
+/svn/!svn/ver/146/trunk/flotr/flotr/mootools/lib/base64.js
 END
 excanvas.js
 K 25
 svn:wc:ra_dav:version-url
-V 58
-/svn/!svn/ver/8/trunk/flotr/flotr/mootools/lib/excanvas.js
+V 60
+/svn/!svn/ver/150/trunk/flotr/flotr/mootools/lib/excanvas.js
+END
+mootools.js
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/146/trunk/flotr/flotr/mootools/lib/mootools.js
+END
+canvastext.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/148/trunk/flotr/flotr/mootools/lib/canvastext.js
+END
+canvas2image.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/146/trunk/flotr/flotr/mootools/lib/canvas2image.js
 END

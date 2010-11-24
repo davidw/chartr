@@ -1,68 +1,223 @@
 body{
-	font-family:Arial,Helvetica,sans-serif;
-	font-size: 12px;
-}
-
-#wrapper{
-	width: 700px;
-	margin: 50px auto;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  width: 1000px;
+  margin: 1em auto;
 }
 
 a:link, a:visited{
-	color: #004892;
-	font-weight: bold;
-	text-decoration: none;
+  color: #004892;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a:visited{
-	color: #1763b5;
+  color: #1763b5;
 }
 
 a:focus, a:hover, a:active{
-	color: #3c85d4;
-	background-color: #b6d9ff;
+  color: #3c85d4;
+  background-color: #b6d9ff;
 }
 
-h1, h2, h3 {
-	font-family:Georgia,"Times New Roman",Times,serif;
-	font-style:italic;
-	font-weight:normal;
-	letter-spacing:-1px;
-	font-size: 1.5em;
-	color: #050404;
+p {
+  margin: 10px;
 }
 
-h2{
-	font-size: 1.4em;
+pre {
+  font-size: 0.9em;
+  border: 1px solid #B6D9FF;
+  background:#d2e8ff;
+  color: #004892;
+  margin: 0;
+  display:block;
+  padding: 3px;
+  height: 300px;
+  overflow: auto;
 }
 
-p{
-	margin: 10px;
+#input-code textarea {
+  border: 1px solid #FFB16D;
+  background: #FFF6DF;
+  height: 300px;
+  padding: 3px;
+  width: 100%;
+  font-size: 0.9em;
+  font-family:"Courier New", Courier, monospace;
+  color: #AD6C37;
+  overflow: auto;
 }
 
-code {
-	background: #b6d9ff;
-	font-size: 0.9em;
-	color: #004892;
+label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
-pre{
-	border: 4px solid #B6D9FF;
-	background:#d2e8ff;
-	color: #004892;
-	padding: 15px;
-	margin:5px 0;
+label span {
+  width: 120px;
+  float: left;
+  display: block;
+  text-align: right;
+  padding: 3px;
 }
 
-pre code{
-	background-color: transparent;
-	display:block;
-	line-height:16px;
-	overflow-x: auto;
-	overflow-y: hidden;
-	white-space:pre;
-	padding:0 5px;
+label.active {
+  background: #FFDC7F;
 }
+
+fieldset,legend {
+  border: 1px solid #999;
+  padding: 5px;
+  -moz-border-radius: 4px 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+fieldset {
+  margin: 4px;
+  background: #FFF6DF;
+}
+
+legend {
+  margin-left: 6px;
+  padding: 2px 8px;
+  background: #eee;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td {
+  padding: 0;
+}
+
+input, table {
+  font-size: 1em;
+}
+
+#configurator,#output {
+  vertical-align: top;
+}
+
+#configurator {
+  border: 1px solid #ccc;
+  width: 430px;
+}
+
+#output {
+  padding: 6px;
+}
+
+.data-entry {
+  float: left; 
+  margin: 0;
+}
+
+.data-entry input {
+  display: block;
+  margin: -1px -1px 0 0;
+  width: 30px;
+  border: 1px solid #ccc;
+}
+
+.data-entry input[disabled] {
+  display: none;
+}
+
+.data-entry a, 
+a.plus {
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 6px;
+  text-align: center;
+  display: block;
+  background: #eee;
+  margin: 0 2px;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+a.plus {
+  display: inline-block;
+  padding: 4px;
+  -moz-border-radius: 4px;
+}
+
+.data-entry a {
+  border-top: none;
+  -moz-border-radius: 0 0 4px 4px;
+}
+
+.serie-options label {
+  display: inline;
+}
+
+.axis-select {
+  float: right;
+}
+
+.axis-select label {
+  display: inline;
+}
+
+ul.subsection_tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  clear: left;
+  height: 24px;
+}
+
+ul.subsection_tabs li.tab {
+  float: left;
+  margin-right: 4px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.subsection_tabs li.tab a {
+  display: block;
+  height: 23px;
+  line-height: 23px;
+  padding: 0 3px 0 3px;
+  background-color: #fff;
+  color: #666;
+  width: 40px;
+  border: 1px solid #ddd;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+  border-bottom: none;
+}
+
+ul.subsection_tabs li.tab a:hover {
+  color: #666;
+  background-color: #eee;
+}
+
+ul.subsection_tabs li.tab a.active {
+  background-color: #ddd;
+}
+
+.colorpickerControl {
+  border: 1px solid gray;
+  background-color: #EEEEEE;
+  padding:3px;
+}
+
+.colorpickerInput {
+  border: 1px solid;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+
+
+
 
 .flotr-datagrid-container {
   border: 1px solid #999;
@@ -91,7 +246,7 @@ pre code{
   border: 2px outset #fff;
 }
 .flotr-datagrid-toolbar {
-	padding: 1px;
+  padding: 1px;
   border-bottom: 1px solid #ccc;
   background: #f9f9f9;
 }
@@ -106,7 +261,7 @@ pre code{
   padding-bottom: 1px;
 }
 .flotr-tabs-group {
-	border-top: 1px solid #999;
+  border-top: 1px solid #999;
 }
 .flotr-tab {
   border: 1px solid #666;
@@ -128,127 +283,4 @@ pre code{
 }
 .flotr-tab:hover {
   background: #ccc;
-}
-
-body {
-  width: 1000px;
-  margin: 1em auto;
-}
-
-label {
-  display: block;
-  text-align: left;
-  margin: 3px;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-label span {
-  width: 120px;
-  float: left;
-  display: block;
-  text-align: right;
-  padding: 3px;
-}
-
-label.active {
-  background: #FFDC7F;
-}
-
-fieldset,legend {
-  border: 1px solid #999;
-  padding: 3px;
-  -moz-border-radius: 4px 4px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-}
-
-fieldset {
-  margin: 4px;
-  background: #FFF6DF;
-}
-
-legend {
-  margin-left: 6px;
-  padding: 2px 8px;
-  background: #eee;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-table td {
-  padding: 0;
-}
-
-#configurator,#output {
-  vertical-align: top;
-}
-
-#configurator {
-  border: 1px solid #ccc;
-  border-top: none;
-}
-
-#output {
-  padding: 6px;
-}
-
-.data-entry {
-  float: left; 
-  margin: 2px;
-}
-
-.data-entry input {
-  display: block;
-}
-
-.data-entry input[disabled] {
-  display: none;
-}
-
-.serie-options label {
-  display: inline;
-}
-
-pre code {
-	height: 300px;
-	overflow: auto;
-	white-space: normal;
-}
-
-ul.subsection_tabs {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  clear: both;
-  border-bottom: 1px solid #ccc;
-  height: 20px;
-}
-
-ul.subsection_tabs li.tab {
-  float: left;
-  margin-right: 7px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-ul.subsection_tabs li.tab a {
-  display: block;
-  height: 20px;
-  padding: 0 6px 0 6px;
-  background-color: #fff;
-  color: #666;
-  width: 40px;
-}
-
-ul.subsection_tabs li.tab a:hover {
-  color: #666;
-  background-color: #eee;
-}
-
-ul.subsection_tabs li.tab a.active {
-  background-color: #ddd;
 }

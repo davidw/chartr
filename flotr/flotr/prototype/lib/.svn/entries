@@ -1,18 +1,18 @@
-9
+10
 
 dir
-102
+173
 http://flotr.googlecode.com/svn/trunk/flotr/flotr/prototype/lib
 http://flotr.googlecode.com/svn
 
 
 
-2009-03-25T12:46:59.751909Z
-101
+2010-08-12T12:35:56.342097Z
+169
 fabien.menager
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -32,12 +32,12 @@ file
 
 
 
-2009-02-16T21:01:50.000000Z
-dc32fd5525e4991b4254d6427d02f81d
-2008-11-16T21:38:25.519743Z
-52
-fabien.menager
 
+dc32fd5525e4991b4254d6427d02f81d
+2010-07-16T16:08:15.707721Z
+164
+fabien.menager
+has-props
 
 
 
@@ -60,17 +60,18 @@ fabien.menager
 
 2977
 
-prototype-1.6.0.2.js
+prototype.js
 file
 
 
 
 
-2009-02-16T21:01:50.000000Z
-85ef171f309a2e29242d85c105bb0223
-2008-11-13T09:08:53.134471Z
-43
+2010-11-24T15:29:06.666866Z
+17bb9abeb5ebae5303cb3a96a193f728
+2010-07-16T16:08:15.707721Z
+164
 fabien.menager
+has-props
 
 
 
@@ -91,8 +92,7 @@ fabien.menager
 
 
 
-
-130347
+134057
 
 excanvas.js
 file
@@ -100,11 +100,12 @@ file
 
 
 
-2009-03-25T21:02:58.000000Z
-71d034b7191d60a78158b33b5dfbd55c
-2009-03-25T12:46:59.751909Z
-101
+2010-11-24T15:29:06.666866Z
+ba633fc806b702150f84b58428f7ef9f
+2010-08-12T12:35:56.342097Z
+169
 fabien.menager
+has-props
 
 
 
@@ -125,8 +126,7 @@ fabien.menager
 
 
 
-
-29195
+41581
 
 canvastext.js
 file
@@ -134,11 +134,12 @@ file
 
 
 
-2009-03-25T21:02:58.000000Z
-cfb31839d67d402328a816f8eb549b3b
-2009-03-20T11:04:46.138067Z
-100
+2010-11-24T15:29:06.666866Z
+8fd8b7ea61868b54800a7a2ff96eb592
+2010-07-16T16:08:15.707721Z
+164
 fabien.menager
+has-props
 
 
 
@@ -159,8 +160,7 @@ fabien.menager
 
 
 
-
-21110
+22594
 
 canvas2image.js
 file
@@ -168,11 +168,12 @@ file
 
 
 
-2009-02-16T21:01:50.000000Z
-05bb1c412705d129fb9b348f282e551c
-2009-01-29T22:46:18.679039Z
-88
+2010-11-24T15:29:06.666866Z
+0c261e8580102c1c3445166d6b06dece
+2010-07-16T16:08:15.707721Z
+164
 fabien.menager
+has-props
 
 
 
@@ -193,6 +194,5 @@ fabien.menager
 
 
 
-
-6127
+6500
 

@@ -1,18 +1,18 @@
-9
+10
 
 dir
-102
+173
 http://flotr.googlecode.com/svn/trunk/flotr/examples/prototype
 http://flotr.googlecode.com/svn
 
 
 
-2009-02-07T01:21:35.788522Z
-94
+2010-09-08T17:22:25.228352Z
+171
 fabien.menager
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -25,6 +25,519 @@ svn:special svn:externals svn:needs-lock
 
 
 4daae283-1d46-0410-8e0a-abc221dbbbb9
+
+basic-time.html
+file
+
+
+
+
+2010-11-24T15:29:08.186872Z
+60bdca62a9d82746a9d2b0e3185a261a
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4112
+
+basic-legend.html
+file
+
+
+
+
+2010-11-24T15:29:08.190890Z
+764e277661659acb35ab13e4d4d25516
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3485
+
+data-download.html
+file
+
+
+
+
+2010-11-24T15:29:08.190890Z
+966b5bb8d6bdd3cee03595f20ef0b5ab
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3782
+
+json-data.html
+file
+
+
+
+
+2010-11-24T15:29:08.190890Z
+8333e217807cad4b1570a8d62a797c7c
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3929
+
+basic.html
+file
+
+
+
+
+2010-11-24T15:29:08.190890Z
+0c1e6c00e61485ae934d0ca0e22bac73
+2010-07-16T20:36:42.557527Z
+166
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2488
+
+style.css
+file
+
+
+
+
+
+7436a70f8b4de1f611f73410d01b82cf
+2010-07-16T16:08:15.707721Z
+164
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2403
+
+basic-candlesticks.html
+file
+
+
+
+
+2010-11-24T15:29:08.190890Z
+d124801c4151f28b396134a8fd07982d
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2488
+
+logarithmic-scale.html
+file
+
+
+
+
+2010-11-24T15:29:08.190890Z
+5739ee33e6fa5e1a6b1853688c6ed972
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2519
+
+mouse-zoom-preview.html
+file
+
+
+
+
+2010-11-24T15:29:08.190890Z
+ca83758761526206501776e6bf185b28
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4921
+
+basic-pie.html
+file
+
+
+
+
+2010-11-24T15:29:08.190890Z
+b6de2aa97aa0bb4b2da403af768d7abe
+2010-09-08T17:22:25.228352Z
+171
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2629
+
+ajax-financial-data.php
+file
+
+
+
+
+2010-11-24T15:29:08.190890Z
+5ba3f6d073586e946906ce63c829178c
+2009-05-10T14:40:01.700348Z
+115
+fabien.menager
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1116
+
+images
+dir
+
+negative.html
+file
+
+
+
+
+2010-11-24T15:29:08.190890Z
+8fe8d7da367ecdf2bf8c1220c78606a4
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4082
+
+advanced-titles.html
+file
+
+
+
+
+2010-11-24T15:29:08.190890Z
+41d55a39a4051b84482e73ff3c217e8c
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3486
+
+extending-flotr.html
+file
+
+
+
+
+2010-11-24T15:29:08.194870Z
+eb57684d72908126d19737dcd5168d4e
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2793
+
+basic-watermark.html
+file
+
+
+
+
+2010-11-24T15:29:08.194870Z
+e6be21803692d5458153995348362722
+2010-09-07T18:42:32.438957Z
+170
+b.wenneker@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2778
 
 blank.cur
 file
@@ -60,153 +573,18 @@ has-props
 
 78
 
-basic-legend.html
-file
-
-
-
-
-2009-02-16T21:01:51.000000Z
-48af221f8a28ac85d64d9f8d40ec7eab
-2009-01-12T19:19:31.814383Z
-82
-fabien.menager
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3334
-
-data-download.html
-file
-
-
-
-
-2009-02-16T21:01:51.000000Z
-691d494b437f55035bd97b45681eff9e
-2009-01-12T19:19:31.814383Z
-82
-fabien.menager
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3771
-
-json-data.html
-file
-
-
-
-
-2009-02-16T21:01:51.000000Z
-ff60ff45be26254fdeb2e9df2f5f8489
-2009-01-12T19:19:31.814383Z
-82
-fabien.menager
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3801
-
-basic.html
-file
-
-
-
-
-2009-02-16T21:01:51.000000Z
-86bcfbbd1445e7a1cdc3313ed1595658
-2009-01-12T19:19:31.814383Z
-82
-fabien.menager
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2195
-
 basic-stacked-bars.html
 file
 
 
 
 
-2009-02-16T21:01:51.000000Z
-914c85faa6da3634f2f29e82709c7eb5
-2009-01-12T19:19:31.814383Z
-82
+2010-11-24T15:29:08.194870Z
+52a8afe76ebc4bda874ff43e76088fec
+2010-07-16T17:32:17.044962Z
+165
 fabien.menager
+has-props
 
 
 
@@ -227,8 +605,7 @@ fabien.menager
 
 
 
-
-3114
+3270
 
 basic-bar.html
 file
@@ -236,11 +613,12 @@ file
 
 
 
-2009-02-16T21:01:51.000000Z
-5b1be34ee825e88888af033fc71f946f
-2009-01-12T19:19:31.814383Z
-82
+2010-11-24T15:29:08.194870Z
+42c6ed553a0c68e6288adf56f82f66a7
+2010-07-16T17:32:17.044962Z
+165
 fabien.menager
+has-props
 
 
 
@@ -261,8 +639,7 @@ fabien.menager
 
 
 
-
-2359
+3030
 
 basic-axis.html
 file
@@ -270,11 +647,12 @@ file
 
 
 
-2009-02-16T21:01:51.000000Z
-82964a2a9568f6f5e038e78c64c4646c
-2009-01-29T22:46:18.679039Z
-88
+2010-11-24T15:29:08.194870Z
+1ffb903fb98a29df0b494eab28593c64
+2010-07-16T17:32:17.044962Z
+165
 fabien.menager
+has-props
 
 
 
@@ -295,8 +673,7 @@ fabien.menager
 
 
 
-
-3394
+3635
 
 json.txt
 file
@@ -304,12 +681,12 @@ file
 
 
 
-2009-02-16T21:01:51.000000Z
-136a9f9e9c038c96c800fa2cdb116e93
-2008-03-25T07:26:15.231986Z
-22
-b.wenneker
 
+136a9f9e9c038c96c800fa2cdb116e93
+2010-07-16T16:08:15.707721Z
+164
+fabien.menager
+has-props
 
 
 
@@ -332,52 +709,18 @@ b.wenneker
 
 281
 
-style.css
-file
-
-
-
-
-2009-02-16T21:01:51.000000Z
-7436a70f8b4de1f611f73410d01b82cf
-2009-01-05T16:05:22.797794Z
-75
-fabien.menager
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2403
-
 examples.js
 file
 
 
 
 
-2009-02-16T21:01:51.000000Z
-1bae0032ae7d47f75be2dea0dce06865
-2009-01-12T19:19:31.814383Z
-82
-fabien.menager
 
+1bae0032ae7d47f75be2dea0dce06865
+2010-07-16T16:08:15.707721Z
+164
+fabien.menager
+has-props
 
 
 
@@ -400,51 +743,18 @@ fabien.menager
 
 588
 
-basic-candlesticks.html
-file
-
-
-
-
-2009-02-16T21:01:51.000000Z
-369d778f14dd255751bc0076417241a0
-2009-01-12T19:19:31.814383Z
-82
-fabien.menager
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2338
-
 image-download.html
 file
 
 
 
 
-2009-02-16T21:01:51.000000Z
-b9fb26c1b34d2ad6188be24db47e3391
-2009-01-12T19:19:31.814383Z
-82
+2010-11-24T15:29:08.194870Z
+fdad44d0e7beca2a18cf023225079624
+2010-07-16T17:32:17.044962Z
+165
 fabien.menager
+has-props
 
 
 
@@ -465,8 +775,7 @@ fabien.menager
 
 
 
-
-4307
+4593
 
 mouse-tracking.html
 file
@@ -474,11 +783,12 @@ file
 
 
 
-2009-02-16T21:01:51.000000Z
-486642a4fd7970f4cdeaa93008c0bcb6
-2009-02-07T01:21:35.788522Z
-94
+2010-11-24T15:29:08.194870Z
+13e24d6d32713e4fa9dbd7a75576802d
+2010-07-16T17:32:17.044962Z
+165
 fabien.menager
+has-props
 
 
 
@@ -499,20 +809,20 @@ fabien.menager
 
 
 
-
-3274
+3425
 
-basic-pie.html
+color-gradients.html
 file
 
 
 
 
-2009-02-16T21:01:51.000000Z
-cd04afa20d3b7e20a48204d3e6d8a71b
-2009-01-30T11:25:31.522352Z
-89
+2010-11-24T15:29:08.194870Z
+597c33deaf09003ea6b9e76b007afe4d
+2010-07-16T17:32:17.044962Z
+165
 fabien.menager
+has-props
 
 
 
@@ -533,20 +843,20 @@ fabien.menager
 
 
 
-
-2449
+3425
 
-negative.html
+json-real-data.html
 file
 
 
 
 
-2009-02-16T21:01:51.000000Z
-4b1ab71a471dc3abccefb5b910f9ae2d
-2009-01-12T19:19:31.814383Z
-82
+2010-11-24T15:29:08.194870Z
+cfe183678d52ab3b9d57f25521441c94
+2010-07-16T17:32:17.044962Z
+165
 fabien.menager
+has-props
 
 
 
@@ -567,8 +877,41 @@ fabien.menager
 
 
 
+3778
+
+mouse-drag.html
+file
 
-3931
+
+
+
+2010-11-24T15:29:08.194870Z
+2ae8c8d0f42db0871d7761439be71f8f
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3766
 
 click-event.html
 file
@@ -576,11 +919,12 @@ file
 
 
 
-2009-02-16T21:01:51.000000Z
-54184c9603b62af6963dae30f167a6e7
-2009-01-12T19:19:31.814383Z
-82
+2010-11-24T15:29:08.194870Z
+347ffd2384336ca6c8f04c8720ab3829
+2010-07-16T17:32:17.044962Z
+165
 fabien.menager
+has-props
 
 
 
@@ -601,8 +945,7 @@ fabien.menager
 
 
 
-
-3156
+3307
 
 index.html
 file
@@ -610,11 +953,12 @@ file
 
 
 
-2009-02-16T21:01:51.000000Z
-bd4ec00410b0163cd2b2402e109a707d
-2009-01-12T19:19:31.814383Z
-82
+2010-11-24T15:29:08.194870Z
+0812ef86974bc2fd41c470dc4bbcb62f
+2010-07-16T17:32:17.044962Z
+165
 fabien.menager
+has-props
 
 
 
@@ -635,20 +979,20 @@ fabien.menager
 
 
 
-
-2257
+3061
 
-advanced-titles.html
+basic-radar.html
 file
 
 
 
 
-2009-02-16T21:01:51.000000Z
-52368732df825e13d9c58d796f3943ba
-2009-01-12T19:19:31.814383Z
-82
+2010-11-24T15:29:08.194870Z
+913b9505bb806fd0ffb69a8ce1eb120f
+2010-07-16T20:36:42.557527Z
+166
 fabien.menager
+has-props
 
 
 
@@ -669,42 +1013,7 @@ fabien.menager
 
 
 
-
-3337
-
-extending-flotr.html
-file
-
-
-
-
-2009-02-16T21:01:51.000000Z
-35febfb14c099ac3540c995724b80bd5
-2009-01-12T19:19:31.814383Z
-82
-fabien.menager
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2642
+2559
 
 mouse-zoom.html
 file
@@ -712,11 +1021,12 @@ file
 
 
 
-2009-02-16T21:01:51.000000Z
-e7e76f731011709ca34204e415eedace
-2009-01-12T19:19:31.814383Z
-82
+2010-11-24T15:29:08.194870Z
+83b1cd3d88ff9b75caf77b4ab3532f96
+2010-07-16T17:32:17.044962Z
+165
 fabien.menager
+has-props
 
 
 
@@ -737,6 +1047,39 @@ fabien.menager
 
 
 
+4118
+
+basic-bubble.html
+file
 
-3967
+
+
+
+2010-11-24T15:29:08.194870Z
+1727418c3f76cd1732226b86818ea7dc
+2010-07-16T17:32:17.044962Z
+165
+fabien.menager
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2625
 

@@ -4,8 +4,16 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>Flotr: Basic Bar Example</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
-		<!--[if IE]><script type="text/javascript" src="../../flotr/mootools/lib/excanvas.js"></script><![endif]-->
-		<script type="text/javascript" src="../../flotr/mootools/lib/mootools-release-1.11.js"></script>
+
+		<script type="text/javascript" src="../../flotr/mootools/lib/mootools.js"></script>
+		<script type="text/javascript" src="examples.js"></script>
+		
+		<!--[if IE]>
+			<script type="text/javascript" src="../../flotr/mootools/lib/excanvas.js"></script>
+			<script type="text/javascript" src="../../flotr/mootools/lib/base64.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="../../flotr/mootools/lib/canvas2image.js"></script>
+		<script type="text/javascript" src="../../flotr/mootools/lib/canvastext.js"></script>
 		<script type="text/javascript" src="../../flotr/mootools/flotr.js"></script>
 	</head>
 	<body>
@@ -13,18 +21,14 @@
 		<!-- ad -->
 		
 		<div id="wrapper">
-			<h1>Flotr: Basic Bar Example</h1>
+			<h1></h1>
 			<div id="container" style="width:600px;height:300px;"></div>
 			<h2>Example</h2>
 			<p>Random bar graph.</p>
 			<p><b>Note</b>: Opera 9.2x has problems with the fill area, this should be fixed in version 9.50.</p>
-			<p>Finished? Go to the example <a href="index.html" title="Flotr Example Index Page">index page</a> or the <a href="http://www.solutoire.com/flotr/docs/" title="Flotr Documentation Pages">Flotr Documentation Pages</a>.</p>
+			<p>Finished? Go to the example <a href="index.html" title="Flotr Example Index Page">index page</a>, play with the <a href="../../playground/index.html" title="Flotr playground">playground</a> or read the <a href="http://www.solutoire.com/flotr/docs/" title="Flotr Documentation Pages">Flotr Documentation Pages</a>.</p>
 			<h2>The Code</h2>
-			<pre><code class="javascript">Flotr.draw(
-	$('container'),
-	[d1, d2],
-	{bars: {show:true, barWidth:0.5}}
-);</code></pre>
+			<pre id="code-view"><code class="javascript"></code></pre>
 			<div id="footer">Copyright &copy; 2008 Bas Wenneker, <a href="http://www.solutoire.com">solutoire.com</a></div>
 		</div>
 		
@@ -35,14 +39,26 @@
 			 * Wait till dom's finished loading.
 			 */
 			window.addEvent('domready', function(){
+        function markerFomatter(obj) {
+          return obj.y+'%';
+        }
+        
 				/**
 				 * Fill series d1 and d2 width random values.
 				 */
-				var d1 = [];
-				var d2 = [];				
-			    for(var i = 0; i < 4; i++ ){
-					d1.push([i,Math.ceil(Math.random()*10)]);
-					d2.push([i+0.5, Math.ceil(Math.random()*10)]);
+				var point, 
+            d1 = [],
+            d2 = [],
+            markers = {data:[], markers:{show: true, position: 'ct', labelFormatter: markerFomatter}, bars:{show: false}};
+            
+			  for(var i = 0; i < 4; i++ ){
+          point = [i, Math.ceil(Math.random()*10)];
+					d1.push(point);
+          markers.data.push(point);
+          
+          point = [i+0.5, Math.ceil(Math.random()*10)];
+					d2.push(point);
+          markers.data.push(point);
 				}
 				
 				/**
@@ -50,8 +66,13 @@
 				 */
 				Flotr.draw(
 					$('container'),
-					[d1, d2],
-					{bars: {show:true, barWidth:0.5}}
+					[d1, d2, markers],
+					{
+            bars: {show:true, barWidth:0.5}, 
+            mouse: {track:true, relative:true},
+					  yaxis: {min: 0, autoscaleMargin: 1},
+            spreadsheet: {show: true}
+					}
 				);
 			});			
 		</script>

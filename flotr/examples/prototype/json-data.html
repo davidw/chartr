@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Flotr: JSON Data Example</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
 
-		<script type="text/javascript" src="../../flotr/prototype/lib/prototype-1.6.0.2.js"></script>
+		<script type="text/javascript" src="../../flotr/prototype/lib/prototype.js"></script>
 		<script type="text/javascript" src="examples.js"></script>
 		
 		<!--[if IE]>
@@ -50,7 +51,7 @@
 			to <code>console.log</code> (print) the response. With Firebug you can examine the Ajax request and it's response.
 			Also, it's worth reading <a href="http://prototypejs.org/learn/json">Introduction to JSON</a> on PrototypeJS.org.					
 			</p>
-			<p>Finished? Go to the example <a href="index.html" title="Flotr Example Index Page">index page</a> or the <a href="http://www.solutoire.com/flotr/docs/" title="Flotr Documentation Pages">Flotr Documentation Pages</a>.</p>
+			<p>Finished? Go to the example <a href="index.html" title="Flotr Example Index Page">index page</a>, play with the <a href="../../playground/index.html" title="Flotr playground">playground</a> or read the <a href="http://www.solutoire.com/flotr/docs/" title="Flotr Documentation Pages">Flotr Documentation Pages</a>.</p>
 			<h2>The Code</h2>
 			<pre id="code-view"><code class="javascript"></code></pre>
 			<div id="footer">Copyright &copy; 2008 Bas Wenneker, <a href="http://www.solutoire.com">solutoire.com</a></div>
@@ -77,7 +78,7 @@
 							/**
 							 * The json is valid! Display the canvas container.
 							 */
-							$('container').setStyle({'display':'block'});
+							$('container').show();
 							
 							/**
 							 * Draw the graph using the JSON data. Of course the

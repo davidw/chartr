@@ -4,8 +4,16 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>Flotr: Basic Example</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
-		<!--[if IE]><script type="text/javascript" src="../../flotr/mootools/lib/excanvas.js"></script><![endif]-->
-		<script type="text/javascript" src="../../flotr/mootools/lib/mootools-release-1.11.js"></script>
+
+		<script type="text/javascript" src="../../flotr/mootools/lib/mootools.js"></script>
+		<script type="text/javascript" src="examples.js"></script>
+		
+		<!--[if IE]>
+			<script type="text/javascript" src="../../flotr/mootools/lib/excanvas.js"></script>
+			<script type="text/javascript" src="../../flotr/mootools/lib/base64.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="../../flotr/mootools/lib/canvas2image.js"></script>
+		<script type="text/javascript" src="../../flotr/mootools/lib/canvastext.js"></script>
 		<script type="text/javascript" src="../../flotr/mootools/flotr.js"></script>
 	</head>
 	<body>
@@ -13,14 +21,14 @@
 		<!-- ad -->
 		
 		<div id="wrapper">
-			<h1>Flotr: Basic Example</h1>
+			<h1></h1>
 			<div id="container" style="width:600px;height:300px;"></div>
 			<h2>Example</h2>
 			<p>This example shows the ease of using Flotr. With just one line of javascript you can
 			draw a nice looking graph.</p>
-			<p>Finished? Go to the example <a href="index.html" title="Flotr Example Index Page">index page</a> or the <a href="http://www.solutoire.com/flotr/docs/" title="Flotr Documentation Pages">Flotr Documentation Pages</a>.</p>
+			<p>Finished? Go to the example <a href="index.html" title="Flotr Example Index Page">index page</a>, play with the <a href="../../playground/index.html" title="Flotr playground">playground</a> or read the <a href="http://www.solutoire.com/flotr/docs/" title="Flotr Documentation Pages">Flotr Documentation Pages</a>.</p>
 			<h2>The Code</h2>
-			<pre><code class="javascript">var f = Flotr.draw($('container'), [ d1, d2 ]);</code></pre>
+			<pre id="code-view"><code class="javascript"></code></pre>
 			<div id="footer">Copyright &copy; 2008 Bas Wenneker, <a href="http://www.solutoire.com">solutoire.com</a></div>
 		</div>
 		

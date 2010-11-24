@@ -2,16 +2,16 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Flotr: Download Image Example</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
 
-		<script type="text/javascript" src="../../flotr/prototype/lib/prototype-1.6.0.2.js"></script>
+		<script type="text/javascript" src="../../flotr/prototype/lib/prototype.js"></script>
 		<script type="text/javascript" src="examples.js"></script>
 		
-		<!--[if IE]>
-			<script type="text/javascript" src="../../flotr/prototype/lib/excanvas.js"></script>
-			<script type="text/javascript" src="../../flotr/prototype/lib/base64.js"></script>
-		<![endif]-->
+		<!--[if IE]><script type="text/javascript" src="../../flotr/prototype/lib/excanvas.js"></script><![endif]-->
+		<script type="text/javascript" src="../../flotr/prototype/lib/base64.js"></script>
+		
 		<script type="text/javascript" src="../../flotr/prototype/lib/canvas2image.js"></script>
 		<script type="text/javascript" src="../../flotr/prototype/lib/canvastext.js"></script>
 		<script type="text/javascript" src="../../flotr/prototype/flotr.js"></script>
@@ -39,7 +39,7 @@
 			This possibility isn't available with Internet Explorer though.</p>
 			<p>A graph can be downloaded or converted as PNG, JPEG or BMP.</p>
 			
-			<p>Finished? Go to the example <a href="index.html" title="Flotr Example Index Page">index page</a> or the <a href="http://www.solutoire.com/flotr/docs/" title="Flotr Documentation Pages">Flotr Documentation Pages</a>.</p>
+			<p>Finished? Go to the example <a href="index.html" title="Flotr Example Index Page">index page</a>, play with the <a href="../../playground/index.html" title="Flotr playground">playground</a> or read the <a href="http://www.solutoire.com/flotr/docs/" title="Flotr Documentation Pages">Flotr Documentation Pages</a>.</p>
 			<h2>The Code</h2>
 			<pre id="code-view"><code class="javascript"></code></pre>
 			<div id="footer">Copyright &copy; 2008 Bas Wenneker, <a href="http://www.solutoire.com">solutoire.com</a></div>
@@ -106,9 +106,10 @@
 						}
 				});
 				
-				if (Prototype.Browser.IE) {
+				if (Prototype.Browser.IE && (!document.documentMode || document.documentMode < 9)) {
 					var form = $(document.forms['image-download']);
-					form.disable().insert({top: "Your browser doesn't allow you to use this feature, sorry :(<br />"});
+					form.disable().insert({top: "Your browser doesn't allow you to get a bitmap image from the plot, "+
+					"you can only get a VML image that you can use in Microsoft Office.<br />"});
 				}
 			});
 		</script>

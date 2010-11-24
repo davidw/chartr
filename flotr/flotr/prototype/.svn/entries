@@ -1,18 +1,18 @@
-9
+10
 
 dir
-102
+173
 http://flotr.googlecode.com/svn/trunk/flotr/flotr/prototype
 http://flotr.googlecode.com/svn
 
 
 
-2009-03-25T14:00:13.359998Z
-102
+2010-09-08T17:22:25.228352Z
+171
 fabien.menager
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2009-03-25T21:02:58.000000Z
-eede45645bbd833c03f62ee28cc359da
-2009-03-25T14:00:13.359998Z
-102
+2010-11-24T15:29:06.670865Z
+0a9a62b21aba3fb4983e88e161ba4188
+2010-09-08T17:22:25.228352Z
+171
 fabien.menager
 has-props
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-108664
+157592
 
 lib
 dir
